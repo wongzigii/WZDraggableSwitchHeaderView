@@ -9,6 +9,9 @@
 
 ![](./GIF/WZAnimatingTransition.gif)
 
+## About
+This project is inspired by Nike's awesome official App [Making of Making Powered by NIKE MSI](https://itunes.apple.com/us/app/making-making-powered-by-nike/id662227880?mt=8).
+
 ## Installation
 ### [CocoaPods](http://cocoapods.org/)
 
@@ -96,14 +99,24 @@ Done!
 @property (nonatomic, strong) NSString *shallowStateText;
 
 /// The text will show on deep dragging state. Default is `RELEASE TO RETURN TO MENU.`
-@property (nonatomic, strong) NSString *deepStateText; ``
+@property (nonatomic, strong) NSString *deepStateText; 
 ````
 
 ## Contact
 - If you have some advice, open an issue or PR
 - Email [me](mailto:wongzigii@outlook.com)
 
+## Credits
+
+Logo : 
+
+- [Iconic](https://github.com/somerandomdude/Iconic)
+
+- [Logo/Emblem/Mark for Hypercompact](https://dribbble.com/shots/197202-Logo-Emblem-Mark-for-Hypercompact?list=searches&offset=4)
+
+Font : 
+
+- Fundamental Brigade Schwer Copyright (c) 2012  by Peter Wiegel.
+
 ## License
 WZDraggableSwitchHeaderView is available under the MIT license, see the [LICENCE](./LICENSE) file for more info.
-
-
