@@ -1,8 +1,8 @@
 # WZDraggableSwitchHeaderView
 
-### How far your thumb can reach on the iPhone 6 Plus ?
+#### How far your thumb can reach on the iPhone 6 Plus ?
 
-### Or, being bored with tapping the button or navigation Item to switch between viewControllers ?
+#### Or, being bored with tapping the button or navigation Item to switch between viewControllers ?
 
 
 ## Quick Look
@@ -44,7 +44,7 @@ Implement the delegate method that will be invoked:
 }
 ````
 
-Hood the UIScrollViewDelegate:
+Hook on the `UIScrollViewDelegate`:
 
 ````objc
 #pragma mark - UIScrollViewDelegate
