@@ -12,13 +12,17 @@
 ## Installation
 ### [CocoaPods](http://cocoapods.org/)
 
-    # For latest release in CocoaPods
-    pod 'WZDraggableSwitchHeaderView'
+````ruby
+# For latest release in CocoaPods
+pod 'WZDraggableSwitchHeaderView'
+````
 
 Or
 
-    # Feeling adventurous? Get the latest on develop
-    pod 'WZDraggableSwitchHeaderView', :git => 'https://github.com/wongzigii/WZDraggableSwitchHeaderView.git', :branch => 'master'
+````ruby
+# Feeling adventurous? Get the latest on develop
+pod 'WZDraggableSwitchHeaderView', :git => 'https://github.com/wongzigii/WZDraggableSwitchHeaderView.git', :branch => 'master'
+````
 
 ## Getting Start
 
