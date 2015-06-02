@@ -33,9 +33,9 @@ Create an instance of `WZDraggableSwitchHeaderView`:
 
 ````objc	
 self.headerView = [[WZDraggableSwitchHeaderView alloc] initWithDelegate:self
-                                                                      frame:CGRectMake(0,0,self.view.bounds.size.width,50)
-                                                          normalStateHeight:20.0f
-                                                     heightCanTriggerSwitch:70.0f];
+                                                                  frame:CGRectMake(0,0,self.view.bounds.size.width,50)
+                                                      normalStateHeight:20.0f
+                                                 heightCanTriggerSwitch:70.0f];
 [self.view addSubView:self.headerView];           
 ````
 
