@@ -1,9 +1,10 @@
 # WZDraggableSwitchHeaderView
 
+[![Build Status](http://img.shields.io/travis/wongzigii/WZDraggableSwitchHeaderView.svg?style=flat)](https://travis-ci.org/wongzigii/WZDraggableSwitchHeaderView) 
+[![Version](https://img.shields.io/cocoapods/v/WZDraggableSwitchHeaderView.svg?style=flat)](http://cocoadocs.org/docsets/WZDraggableSwitchHeaderView)
+
 #### How far your thumb can reach on the iPhone 6 Plus ?
-
 #### Or, being bored with tapping the button or navigation Item to switch between viewControllers ?
-
 
 ## Quick Look
 
