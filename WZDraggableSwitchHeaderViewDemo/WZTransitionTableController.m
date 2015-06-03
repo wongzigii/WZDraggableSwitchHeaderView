@@ -146,7 +146,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"WZExampleCell" owner:self options:nil];
+    NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"WZAnimatingTransitionCell" owner:self options:nil];
     WZAnimatingTransitionCell *cell = [topLevelObjects objectAtIndex:0];
     cell.backgroundColor = self.colorsArray[indexPath.row];
     cell.iconImage.image = [UIImage imageNamed:[self.imageNameArray objectAtIndex:indexPath.row]];
