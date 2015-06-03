@@ -29,6 +29,10 @@ pod 'WZDraggableSwitchHeaderView', :git => 'https://github.com/wongzigii/WZDragg
 
 ## Getting Start
 
+````objc
+#import "WZDraggableSwitchHeaderView.h"
+````
+
 Create an instance of `WZDraggableSwitchHeaderView`:
 
 ````objc	
