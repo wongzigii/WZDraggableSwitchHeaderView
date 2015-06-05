@@ -70,9 +70,9 @@ typedef NS_ENUM (NSInteger, WZDraggableSwitchState){
 @property (nonatomic, strong) NSString *deepStateText;
 
 /// This is the designated init method for this class. Always use this method to init the header view.
-- (instancetype)initDraggableSwitchHeaderViewWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame normalStateHeight:(CGFloat)normalStateHeight heightCanTriggerSwitch:(CGFloat)heightCanTriggerSwitch;
+- (instancetype)initWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame normalStateHeight:(CGFloat)normalStateHeight heightCanTriggerSwitch:(CGFloat)heightCanTriggerSwitch;
 
-- (instancetype)initDraggableSwitchHeaderViewWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame;
+- (instancetype)initWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame;
 
 /// This method will trace down the state of header view while scrolling.
 /// Note that : You need to invoke this method manually within UIScrollViewDelegate's `- scrollViewDidScroll:` method.
