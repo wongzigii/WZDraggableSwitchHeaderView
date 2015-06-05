@@ -31,6 +31,7 @@
 		E0C07EC11B1D5AE900FF008D /* WZTransitionTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C07EBC1B1D5AE900FF008D /* WZTransitionTableController.m */; };
 		E0C07EC51B1D624B00FF008D /* WZDraggableSwitchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C07EC41B1D624B00FF008D /* WZDraggableSwitchHeaderView.m */; };
 		E0C07EC81B1D64CA00FF008D /* WZAnimatingTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C07EC71B1D64CA00FF008D /* WZAnimatingTransition.m */; };
+		E0C07F321B21965D00FF008D /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E0C07F311B21965D00FF008D /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +78,9 @@
 		E0C07EBC1B1D5AE900FF008D /* WZTransitionTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTransitionTableController.m; sourceTree = "<group>"; };
 		E0C07EC31B1D624B00FF008D /* WZDraggableSwitchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZDraggableSwitchHeaderView.h; sourceTree = "<group>"; };
 		E0C07EC41B1D624B00FF008D /* WZDraggableSwitchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZDraggableSwitchHeaderView.m; sourceTree = "<group>"; };
-		E0C07EC61B1D64CA00FF008D /* WZAnimatingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZAnimatingTransition.h; path = ../../WZAnimatingTransition.h; sourceTree = "<group>"; };
-		E0C07EC71B1D64CA00FF008D /* WZAnimatingTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZAnimatingTransition.m; path = ../../WZAnimatingTransition.m; sourceTree = "<group>"; };
+		E0C07EC61B1D64CA00FF008D /* WZAnimatingTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WZAnimatingTransition.h; path = ../WZDraggableSwitchHeaderViewDemo/WZAnimatingTransition.h; sourceTree = "<group>"; };
+		E0C07EC71B1D64CA00FF008D /* WZAnimatingTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WZAnimatingTransition.m; path = ../WZDraggableSwitchHeaderViewDemo/WZAnimatingTransition.m; sourceTree = "<group>"; };
+		E0C07F311B21965D00FF008D /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		E0C07E9F1B1D5ACE00FF008D /* Logo */ = {
 			isa = PBXGroup;
 			children = (
+				E0C07F311B21965D00FF008D /* bg.png */,
 				E0C07EA01B1D5ACE00FF008D /* hc-drib3.png */,
 				E0C07EA11B1D5ACE00FF008D /* ios7-cloudy.png */,
 				E0C07EA21B1D5ACE00FF008D /* load-a.png */,
@@ -202,7 +205,7 @@
 				E0C07EC71B1D64CA00FF008D /* WZAnimatingTransition.m */,
 			);
 			name = WZDraggableSwitchHeaderView;
-			path = Logo/WZDraggableSwitchHeaderView;
+			path = ../WZDraggableSwitchHeaderView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +290,7 @@
 			files = (
 				E004D03C1B1C962A0056159B /* LaunchScreen.xib in Resources */,
 				E0C07EAB1B1D5ACE00FF008D /* Fundamental Brigade.ttf in Resources */,
+				E0C07F321B21965D00FF008D /* bg.png in Resources */,
 				E0C07EAE1B1D5ACE00FF008D /* load-a.png in Resources */,
 				E0C07EAC1B1D5ACE00FF008D /* hc-drib3.png in Resources */,
 				E004D0391B1C962A0056159B /* Images.xcassets in Resources */,
