@@ -18,7 +18,7 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
 
 @implementation WZDraggableSwitchHeaderView
 
-- (instancetype)initDraggableSwitchHeaderViewWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame normalStateHeight:(CGFloat)normalStateHeight heightCanTriggerSwitch:(CGFloat)heightCanTriggerSwitch
+- (instancetype)initWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame normalStateHeight:(CGFloat)normalStateHeight heightCanTriggerSwitch:(CGFloat)heightCanTriggerSwitch
 {
     if (self = [super initWithFrame:frame]) {
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth;
@@ -58,9 +58,9 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
     return self;
 }
 
-- (instancetype)initDraggableSwitchHeaderViewWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame
+- (instancetype)initWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame
 {
-    self = [self initDraggableSwitchHeaderViewWithDelegate:delegate frame:frame normalStateHeight:self.normalStateHeight heightCanTriggerSwitch:self.heightCanTriggerSwitch];
+    self = [self initWithDelegate:delegate frame:frame normalStateHeight:self.normalStateHeight heightCanTriggerSwitch:self.heightCanTriggerSwitch];
     return self;
 }
 

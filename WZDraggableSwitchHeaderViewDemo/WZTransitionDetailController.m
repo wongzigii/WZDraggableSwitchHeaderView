@@ -27,10 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.headerView = [[WZDraggableSwitchHeaderView alloc] initWithDelegate:self
-                                                                      frame:CGRectMake(0,0,self.view.bounds.size.width,50)
-                                                          normalStateHeight:20.0f
-                                                     heightCanTriggerSwitch:70.0f];
+    self.headerView = [[WZDraggableSwitchHeaderView alloc] initWithDelegate:self frame:CGRectMake(0, 0, self.view.bounds.size.width, 50) normalStateHeight:20.0f heightCanTriggerSwitch:70.0f];
     
     self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.headerView.frame.size.height, self.headerView.frame.size.width, self.view.bounds.size.height - self.headerView.frame.size.height)];
     self.scrollView.showsVerticalScrollIndicator = NO;
@@ -49,7 +46,7 @@
     textLabel.font = [UIFont fontWithName:@"Futura" size:16.0];
     [self.scrollView addSubview:textLabel];
     
-    self.view.backgroundColor = [UIColor colorWithRed:248.0 / 255.0 green:248.0 / 255.0 blue:248.0 / 255.0 alpha:1.0];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg"]];
     [self.view addSubview:self.scrollView];
     [self.view addSubview:self.headerView];
 }
