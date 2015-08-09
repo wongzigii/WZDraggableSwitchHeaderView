@@ -11,6 +11,7 @@
 extern const CGFloat WZ_ARROW_ANIMATION_DURATION;
 extern const CGFloat WZ_ARROW_IMAGE_HEIGHT;
 extern const CGFloat WZ_FLIP_ANIMATION_DURATION;
+extern const CGFloat WZ_STATUS_LABEL_HEIGHT;
 
 /// The state of header view will process.
 

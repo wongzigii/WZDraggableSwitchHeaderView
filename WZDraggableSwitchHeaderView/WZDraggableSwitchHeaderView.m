@@ -14,6 +14,7 @@
 const CGFloat WZ_ARROW_ANIMATION_DURATION = 0.18f;
 const CGFloat WZ_ARROW_IMAGE_HEIGHT       = 15.0f;
 const CGFloat WZ_FLIP_ANIMATION_DURATION  = 0.5;
+const CGFloat WZ_STATUS_LABEL_HEIGHT      = 50.f;
 static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
 
 @implementation WZDraggableSwitchHeaderView
@@ -38,7 +39,7 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
         self.statusLabel = [[UILabel alloc] initWithFrame:CGRectMake(layer.frame.size.width + 2 * WZ_ARROW_IMAGE_HEIGHT,
                                                                      0,
                                                                      frame.size.width,
-                                                                     50.0f)];
+                                                                     WZ_STATUS_LABEL_HEIGHT)];
         self.statusLabel.text = self.normalStateText;
         self.statusLabel.textColor = [UIColor whiteColor];
         self.statusLabel.font = [UIFont fontWithName:WZ_HEADER_VIEW_FONT size:16.0];
@@ -63,6 +64,8 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
     self = [self initWithDelegate:delegate frame:frame normalStateHeight:self.normalStateHeight heightCanTriggerSwitch:self.heightCanTriggerSwitch];
     return self;
 }
+
+#pragma mark - Getter
 
 - (CGFloat)normalStateHeight
 {
@@ -199,6 +202,12 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
 - (void)dealloc
 {
     _delegate = nil;
+    self.statusLabel = nil;
+    self.backButton = nil;
+    self.arrowImage = nil;
+    self.normalStateText = nil;
+    self.shallowStateText = nil;
+    self.deepStateText = nil;
 }
 
 @end

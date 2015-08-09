@@ -25,6 +25,8 @@
 
 @implementation WZTransitionTableController
 
+#pragma mark - ViewController LifeCycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -37,6 +39,7 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
     self.imageNameArray = @[@"social-dribbble-outline", @"social-github", @"social-dropbox", @"social-instagram", @"ios7-cloudy"];
     self.colorsArray = @[[UIColor DribbbleColor], [UIColor GithubColor], [UIColor DropboxColor], [UIColor InstagramColor], [UIColor CloudyColor]];
     self.namesArray = @[@"Dribbble", @"GitHub", @"Dropbox", @"Instagram", @"Cloudy"];
@@ -58,6 +61,13 @@
     [self performSelector:@selector(animationBackToOrigin) withObject:nil afterDelay:0.7f];
 }
 
+#pragma  mark - Private
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 - (void)animationBackToOrigin
 {
     if (self.isBackward && self.currentSelectIndexPath) {
@@ -75,11 +85,7 @@
                                  CGRect labelRect = CGRectMake(label.frame.origin.x, iconImageRect.origin.y + iconImageRect.size.height + 10 + self.view.frame.size.height, label.frame.size.width, label.frame.size.height);
                                  [cell.titleLabel setFrame:labelRect];
                              }completion:^(BOOL finished) {
-                                  self.isBackward = NO;
-                                  self.currentSelection = -1;
-                                  self.textLabel = nil;
-                                  self.tableView.scrollEnabled = YES;
-                                  self.tableView.allowsSelection = YES;
+                                 [self animationCompleted];
                              }];
             [self.tableView endUpdates];
             [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
@@ -87,9 +93,13 @@
     }
 }
 
-- (BOOL)prefersStatusBarHidden
+- (void)animationCompleted
 {
-    return YES;
+    self.isBackward = NO;
+    self.currentSelection = -1;
+    self.textLabel = nil;
+    self.tableView.scrollEnabled = YES;
+    self.tableView.allowsSelection = YES;
 }
 
 - (void)animatingTransitionForTableView:(UITableView *)tableView rowAtIndexPath:(NSIndexPath *)indexPath
@@ -128,6 +138,7 @@
         [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionMiddle animated:YES];
     }
 }
+
 
 - (void)transitionBetweenViewControllers
 {

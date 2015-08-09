@@ -20,10 +20,7 @@
 
 @implementation WZTransitionDetailController
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
+#pragma mark - ViewControllers LifeCycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -54,6 +51,11 @@
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 #pragma mark - WZDraggableSwitchHeaderViewDelegate
