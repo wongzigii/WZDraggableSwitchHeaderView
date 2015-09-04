@@ -110,7 +110,7 @@ Done!
 ## Contact
 <a href="https://twitter.com/wongzigii">
   <img alt="Follow me on Twitter"
-       src="./Screenshot/twitter64.png" />
+       src="./GIF/twitter64.png" />
 </a>
 
 ## Credits
