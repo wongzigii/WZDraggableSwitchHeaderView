@@ -108,8 +108,9 @@ Done!
 ````
 
 ## Contact
-- If you have some advice, open an issue or PR
-- Email [me](mailto:wongzigii@outlook.com)
+[@Wongzigii](https://twitter.com/wongzigii)
+
+![](./GIF/twitter64.png)
 
 ## Credits
 
