@@ -108,9 +108,10 @@ Done!
 ````
 
 ## Contact
-[@Wongzigii](https://twitter.com/wongzigii)
-
-![](./GIF/twitter64.png)
+<a href="https://twitter.com/wongzigii">
+  <img alt="Follow me on Twitter"
+       src="./Screenshot/twitter64.png" />
+</a>
 
 ## Credits
 
