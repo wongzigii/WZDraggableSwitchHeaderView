@@ -9,7 +9,6 @@
 #import "WZDraggableSwitchHeaderView.h"
 
 #define WZ_HEADER_VIEW_BACKGROUND_COLOR [UIColor colorWithRed:35.0 / 255.0 green:35.0 / 255.0 blue:35.0 / 255.0 alpha:1.0]
-#define WZ_ARROW_BACKGROUND_COLOR       [UIColor colorWithRed:3.0 / 255.0 green:3.0 / 255.0 blue:3.0 / 255.0 alpha:1.0]
 
 const CGFloat WZ_ARROW_ANIMATION_DURATION = 0.18f;
 const CGFloat WZ_ARROW_IMAGE_HEIGHT       = 15.0f;
@@ -36,7 +35,7 @@ static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
                                  WZ_ARROW_IMAGE_HEIGHT);
         layer.contentsGravity = kCAGravityResizeAspect;
         layer.contents = (id)[UIImage imageNamed:@"up_arrow"].CGImage;
-        layer.backgroundColor = WZ_ARROW_BACKGROUND_COLOR.CGColor;
+        layer.backgroundColor = WZ_HEADER_VIEW_BACKGROUND_COLOR.CGColor;
         [self.layer addSublayer:layer];
         self.arrowImage = layer;
         
