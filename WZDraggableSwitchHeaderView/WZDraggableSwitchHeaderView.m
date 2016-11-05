@@ -17,6 +17,10 @@ const CGFloat WZ_FLIP_ANIMATION_DURATION  = 0.5;
 const CGFloat WZ_STATUS_LABEL_HEIGHT      = 50.f;
 static NSString * WZ_HEADER_VIEW_FONT     = @"Fundamental  Brigade Schwer";
 
+@interface WZDraggableSwitchHeaderView()<CAAnimationDelegate>
+
+@end
+
 @implementation WZDraggableSwitchHeaderView
 
 - (instancetype)initWithDelegate:(id<WZDraggableSwitchHeaderViewDelegate>)delegate frame:(CGRect)frame normalStateHeight:(CGFloat)normalStateHeight heightCanTriggerSwitch:(CGFloat)heightCanTriggerSwitch

@@ -14,6 +14,7 @@ const CGFloat kTextLabelWidth  = 200.0f;
 const CGFloat kTextLabelHeight = 30.0f;
 
 - (void)awakeFromNib {
+	[super awakeFromNib];
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
