@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint WZSnakeHUD.podspec' to ensure this is a
+#  Be sure to run `pod spec lint WZDraggableSwitchHeaderView.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
